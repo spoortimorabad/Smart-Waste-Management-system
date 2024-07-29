@@ -1,6 +1,7 @@
 # Waste-Management-System
 
 A waste management system refers to the comprehensive processes and activities involved in managing waste from its inception to its final disposal. This system encompasses the collection, transportation, treatment, and disposal of waste materials. It also includes monitoring and regulation of the waste management processes to ensure minimal environmental impact and compliance with regulations.
+Our porject consists of ER Diagram and Schema diagram.
 
 ### Features
 * Tracking Waste Generation:Waste tracking,Amount generated,Household data,Municipal data
@@ -20,7 +21,7 @@ The waste management system provides an efficient portal for monitoring, collect
  
  ### How to run the project
  * Install Dependencies required for the project: npm install 
- * After npm install -> to start project type "node main.js" in terminal
+ * After npm install -> to start project type "node main.js" in terminal.<br>
  The server will start running in localhost 3000. Open web Browser and type localhost:3000
 
- Check out the database for client and admin passwords.You can add.modify or remove the credentials as per you requirementsby running sql commands.
+ Check out the database for client and admin passwords.You can add,modify or remove the credentials as per you requirements by running sql commands.
