@@ -25,16 +25,13 @@ DROP TABLE IF EXISTS `complaint`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `complaint` (
-  `complaint_id` varchar(10) NOT NULL,
   `user_id` varchar(10) NOT NULL,
+  `area_name` varchar(50) NOT NULL,
+  `driver_name` varchar(255) NOT NULL,
   `message` varchar(100) NOT NULL,
-  `image` longblob,
-  `complaint_status` varchar(50) NOT NULL,
-  `complaint_date` date NOT NULL,
-  `complaint_time` time NOT NULL,
-  `complaint_resolved_date` date DEFAULT NULL,
-  `complaint_resolved_time` time DEFAULT NULL,
-  PRIMARY KEY (`complaint_id`)
+  `complaint_date` varchar(100) NOT NULL,
+  PRIMARY KEY (`user_id`),
+  FOREIGN KEY (`driver_name`) REFERENCES `vehicles` (`driver_name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -44,7 +41,7 @@ CREATE TABLE `complaint` (
 
 LOCK TABLES `complaint` WRITE;
 /*!40000 ALTER TABLE `complaint` DISABLE KEYS */;
-INSERT INTO `complaint` VALUES ('c101','u101','Garbage not cleaned from the area',NULL,'NOT_RESOLVED','2019-08-01','12:35:23',NULL,NULL);
+INSERT INTO `complaint` VALUES ('u101','rajaji','sumuk','Garbage not cleaned from the area','2019-08-01');
 /*!40000 ALTER TABLE `complaint` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

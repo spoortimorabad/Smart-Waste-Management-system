@@ -26,11 +26,9 @@ DROP TABLE IF EXISTS `waste_produced`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `waste_produced` (
   `user_id` varchar(10) NOT NULL,
-  `w_date` date NOT NULL,
   `bio_weight` decimal(10,2) NOT NULL,
   `non_bio_weight` decimal(10,2) NOT NULL,
-  PRIMARY KEY (`user_id`,`w_date`),
-  CONSTRAINT `waste_produced_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user1` (`user_id`)
+  PRIMARY KEY (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 

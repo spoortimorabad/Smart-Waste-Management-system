@@ -1,0 +1,22 @@
+{
+  "name": "waste-management-system",
+  "version": "1.0.0",
+  "description": "* Tracking the amount of waste generated from each house and each municipality.\r * Methods to dispose of biodegradable and non-bio-degradable wastes efficiently.\r * Maintenance of a completely robust and efficient database to track all the information on waste generation and disposal.\r * Managers of dumps and recycling factories can publish their possibilities or needs in acquiring a certain amount of waste for storing or recycling.\r * A grievance system for people to submit any kinds of suggestions/problems regarding waste management in their locality. \r ### The modules in the proposed system as follows\r * Minimalistic and elegant, interactive user interface.\r * Database to store/view/retrieve the details collected from each house and locality.\r * Online Portal to report problems and give suggestions on waste management.",
+  "main": "main.js",
+  "scripts": {
+    "start": "nodemon main.js && react-scripts start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.18.2",
+    "form-data": "^4.0.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.0",
+    "nodemon": "^3.0.1"
+  }
+}

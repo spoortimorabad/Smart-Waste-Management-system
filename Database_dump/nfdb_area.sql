@@ -40,6 +40,7 @@ CREATE TABLE `area` (
 LOCK TABLES `area` WRITE;
 /*!40000 ALTER TABLE `area` DISABLE KEYS */;
 INSERT INTO `area` VALUES ('a201','Mount Kali','13.0827 N','80.2707 E'),('a202','Jai Nagar','11.0168 N,','76.9558 E'),('a203','Temple Nagar','13.0827 N','80.2707 E'),('a204','Baba Street','13.0827 N','80.2707 E'),('a205','Peons Colony','9.9252 N','78.1198 E'),('a206','Lakshmi Nagar','9.9312 N','76.2673 E'),('a207','Manis Nagar','10.7905 N','78.7047 E');
+
 /*!40000 ALTER TABLE `area` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
