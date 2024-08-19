@@ -24,4 +24,4 @@ The waste management system provides an efficient portal for monitoring, collect
  * After npm install -> to start project type "node main.js" in terminal.<br>
  The server will start running in localhost 3000. Open web Browser and type localhost:3000
 
- Check out the database for client and admin passwords.You can add,modify or remove the credentials as per you requirements by running sql commands.
+ Check out the database for client and admin passwords.You can add,modify or remove the credentials as per your requirements by running sql commands.
